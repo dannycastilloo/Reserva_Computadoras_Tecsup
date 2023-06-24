@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Reserva_Computadoras_Tecsup.MainPage"
+            xmlns:local="clr-namespace:Reserva_Computadoras_Tecsup.Views"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="#448AFF"
+            SelectedTabColor="White"
+            UnselectedTabColor="#D3D8E0">
+
+    <TabbedPage.Children>
+        <local:Home Title="Inicio" IconImageSource="hogar.png" />
+        <local:Reservar1 Title="Reservar" IconImageSource="agregar.png"/>
+        <local:Contacto Title="Contacto" IconImageSource="sobre.png"/>
+        <local:Login Title="Cerrar sesión" IconImageSource="salir.png"/>
+    </TabbedPage.Children>
+
+</TabbedPage>

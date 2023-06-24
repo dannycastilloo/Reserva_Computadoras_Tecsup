@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Reserva_Computadoras_Tecsup.Views.Reservar3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Reserva"/>
+
+            <Label Text="Felicidades! La reserva de su computadora ha sido un éxito."/>
+
+            <Image Source="pc.png"/>
+            <Label Text="Nombre"/>
+            <Label Text="Computadora"/>
+            <Label Text="Fecha y hora"/>
+
+            <Label Text="Si lo desea, puede revisar y modificar sus reservas en Mis Reservas y verificarlas en Google Calendar"/>
+
+            <Button x:Name="volverInicio" Text="Ir a mis reservas"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

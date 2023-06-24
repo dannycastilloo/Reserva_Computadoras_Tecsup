@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Reserva_Computadoras_Tecsup.Views.Login">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#448AFF" Padding="30">
+            <Image Source="logo.png"
+                   Margin="10,30,10,30"/>
+
+            <Frame BackgroundColor="White" Padding="30" HeightRequest="500" CornerRadius="30">
+                <StackLayout Margin="10,40,10,30">
+                    <Label Text="Bienvenido!" HorizontalOptions="Center" TextColor="#448AFF" FontSize="24" Margin="0,10,0,10"/>
+
+                    <Label Text="Usuario" Margin="5,40,0,10" TextColor="#D3D8E0"/>
+                    <Entry />
+
+                    <Label Text="Contraseña" Margin="5,40,0,10" TextColor="#D3D8E0"/>
+                    <Entry />
+
+                    <Button x:Name="iniciarSesion"
+                            Text="Iniciar sesión"
+                            BackgroundColor="#448AFF"
+                            CornerRadius="20"
+                            Margin="0,40,0,0"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
