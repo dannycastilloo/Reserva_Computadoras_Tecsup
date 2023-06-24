@@ -9,13 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace Reserva_Computadoras_Tecsup.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Reservar1 : ContentPage
-    {
-        public Reservar1()
-        {
-            InitializeComponent();
-            List<string> computadoras = new List<string>
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class EscogerPC : ContentPage
+	{
+		public EscogerPC ()
+		{
+			InitializeComponent (); List<string> computadoras = new List<string>
             {
                 "PC-01",
                 "PC-02",
@@ -39,6 +38,10 @@ namespace Reserva_Computadoras_Tecsup.Views
                 "PC-10"
             };
             misComputadoras.ItemsSource = computadoras;
+        }
+        private async void SelectPC(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Reservar2());
         }
     }
 }

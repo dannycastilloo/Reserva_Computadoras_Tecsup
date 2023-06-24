@@ -7,11 +7,12 @@
             android:TabbedPage.ToolbarPlacement="Bottom"
             BarBackgroundColor="#448AFF"
             SelectedTabColor="White"
-            UnselectedTabColor="#D3D8E0">
+            UnselectedTabColor="#D3D8E0"
+            Title="Sistema de Reservas Tecsup">
 
     <TabbedPage.Children>
         <local:Home Title="Inicio" IconImageSource="hogar.png" />
-        <local:Reservar1 Title="Reservar" IconImageSource="agregar.png"/>
+        <local:EscogerPC Title="Reservar" IconImageSource="agregar.png"/>
         <local:Contacto Title="Contacto" IconImageSource="sobre.png"/>
         <local:Login Title="Cerrar sesión" IconImageSource="salir.png"/>
     </TabbedPage.Children>

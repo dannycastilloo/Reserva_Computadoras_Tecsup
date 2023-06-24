@@ -10,7 +10,7 @@
 
             <Image Source="pc.png"/>
 
-            <Button x:Name="confirmarReserva" Text="Confirmar Reserva" />
+            <Button Text="Confirmar Reserva" Clicked="Confirmar" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

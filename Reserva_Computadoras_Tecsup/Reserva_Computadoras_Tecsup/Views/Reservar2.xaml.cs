@@ -16,5 +16,9 @@ namespace Reserva_Computadoras_Tecsup.Views
         {
             InitializeComponent();
         }
+        private async void Confirmar(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Reservar3());
+        }
     }
 }

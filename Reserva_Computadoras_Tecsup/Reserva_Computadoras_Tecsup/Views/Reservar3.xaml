@@ -15,7 +15,7 @@
 
             <Label Text="Si lo desea, puede revisar y modificar sus reservas en Mis Reservas y verificarlas en Google Calendar"/>
 
-            <Button x:Name="volverInicio" Text="Ir a mis reservas"/>
+            <Button Text="Ir a mis reservas" Clicked="VolverInicio" />
 
         </StackLayout>
     </ContentPage.Content>
