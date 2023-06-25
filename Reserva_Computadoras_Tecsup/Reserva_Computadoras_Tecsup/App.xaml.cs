@@ -12,7 +12,7 @@ namespace Reserva_Computadoras_Tecsup
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Views.Login();
         }
 
         protected override void OnStart()
