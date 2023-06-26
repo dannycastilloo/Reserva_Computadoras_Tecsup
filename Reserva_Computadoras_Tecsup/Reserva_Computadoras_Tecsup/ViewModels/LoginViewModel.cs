@@ -38,7 +38,7 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
                 var config = new FirebaseAuthConfig
                 {
                     ApiKey = "AIzaSyD5JuYhNdWuB5G5Xy_D3Uo3oyzTqjXk974",
-                    AuthDomain = "ReservaComputadoras.firebaseapp.com",
+                    AuthDomain = "reservacomputadorastecsup.firebaseapp.com",
                     Providers = new FirebaseAuthProvider[]
                     {
                         new EmailProvider()
