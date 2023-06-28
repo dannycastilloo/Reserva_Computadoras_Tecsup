@@ -1,15 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Reserva_Computadoras_Tecsup.Views.Home">
+             x:Class="Reserva_Computadoras_Tecsup.Views.Home"
+             Title="Inicio">
     <ContentPage.Content>
         <StackLayout Padding="30">
-            <Label Text="Reserva de Computadoras"
-                   FontSize="36"
-                   TextColor="#448AFF"
-                   FontFamily="Satoshi"
-                   HorizontalOptions="Center"
-                   Margin="0,20,0,20"/>
+            
 
             <CollectionView>
                 <CollectionView.ItemsLayout>

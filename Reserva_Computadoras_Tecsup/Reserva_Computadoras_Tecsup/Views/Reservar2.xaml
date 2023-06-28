@@ -4,7 +4,13 @@
              x:Class="Reserva_Computadoras_Tecsup.Views.Reservar2">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Reserva"></Label>
+
+            <Label Text="Reserva"
+                   FontSize="36"
+                   TextColor="#448AFF"
+                   FontFamily="Satoshi"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,20"/>
 
             <Label Text="Elija la hora y la fecha para reservar su computadora" />
 

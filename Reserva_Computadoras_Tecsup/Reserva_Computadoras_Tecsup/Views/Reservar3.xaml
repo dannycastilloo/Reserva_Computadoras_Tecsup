@@ -4,9 +4,16 @@
              x:Class="Reserva_Computadoras_Tecsup.Views.Reservar3">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Reserva"/>
 
-            <Label Text="Felicidades! La reserva de su computadora ha sido un éxito."/>
+            <Label Text="Reserva"
+                   FontSize="36"
+                   TextColor="#448AFF"
+                   FontFamily="Satoshi"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,20"/>
+            
+            <Label Text="Felicidades! La reserva de su computadora ha sido un éxito."
+                   />
 
             <Image Source="pc.png"/>
             <Label Text="Nombre"/>
