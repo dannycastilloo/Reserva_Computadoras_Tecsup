@@ -14,30 +14,7 @@ namespace Reserva_Computadoras_Tecsup.Views
     {
         public SelectPc()
         {
-            InitializeComponent(); List<string> computadoras = new List<string>
-            {
-                "PC-01",
-                "PC-02",
-                "PC-03",
-                "PC-04",
-                "PC-05",
-                "PC-06",
-                "PC-07",
-                "PC-08",
-                "PC-09",
-                "PC-10",
-                "PC-01",
-                "PC-02",
-                "PC-03",
-                "PC-04",
-                "PC-05",
-                "PC-06",
-                "PC-07",
-                "PC-08",
-                "PC-09",
-                "PC-10"
-            };
-            misComputadoras.ItemsSource = computadoras;
+            InitializeComponent();
         }
         private async void SelectPC(object sender, EventArgs e)
         {

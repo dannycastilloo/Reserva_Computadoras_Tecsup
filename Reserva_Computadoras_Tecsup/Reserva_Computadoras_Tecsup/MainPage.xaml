@@ -8,7 +8,8 @@
             BarBackgroundColor="#448AFF"
             SelectedTabColor="White"
             UnselectedTabColor="#D3D8E0"
-            NavigationPage.HasNavigationBar="False">
+            NavigationPage.HasNavigationBar="False"
+            BackgroundColor="{StaticResource WindowBackgroundColor}">
 
     <TabbedPage.Children>
         <local:Home Title="Inicio" IconImageSource="hogar.png" />

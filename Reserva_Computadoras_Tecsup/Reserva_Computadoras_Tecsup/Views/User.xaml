@@ -9,17 +9,18 @@
                    FontSize="36"
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
-                   HorizontalOptions="Center"
-                   Margin="0,20,0,20"/>
+                   HorizontalTextAlignment="Center"
+                   Margin="0,30,0,20"/>
 
             <StackLayout Orientation="Horizontal" Margin="0,30,0,30">
-                <Image Source="usuario.png"/>
-                <Label Text="Danny Castillo"/>
+                <Image Source="person.png" WidthRequest="60"/>
+                <Label Text="Danny Castillo" Margin="20,20,0,0"/>
             </StackLayout>
 
             <Button x:Name="logOut"
                     Text="Cerrar sesión"
                     BackgroundColor="#448AFF"
+                    TextColor="White"
                     CornerRadius="20"
                     HeightRequest="55"
                     Margin="0,20,0,0"/>

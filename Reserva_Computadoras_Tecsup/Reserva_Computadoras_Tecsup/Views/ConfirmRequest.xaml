@@ -10,7 +10,7 @@
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
                    HorizontalOptions="Center"
-                   Margin="0,0,0,40"/>
+                   Margin="0,20,0,40"/>
 
             <Image Source="pc.png" Margin="0,20,0,20"/>
             <Label Text="Nombre" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>

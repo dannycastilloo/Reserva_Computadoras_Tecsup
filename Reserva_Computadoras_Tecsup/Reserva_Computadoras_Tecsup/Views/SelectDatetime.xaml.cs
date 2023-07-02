@@ -16,6 +16,10 @@ namespace Reserva_Computadoras_Tecsup.Views
 		{
 			InitializeComponent ();
 		}
+		public void ShowDate(object obj, EventArgs args)
+		{
+			DisplayAlert("DATE", datepicker.Date.ToString(),"OK");
+		}
         private async void Confirmar(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new ConfirmRequest());

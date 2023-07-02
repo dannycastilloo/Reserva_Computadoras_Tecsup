@@ -12,12 +12,56 @@
                    HorizontalOptions="Center"
                    Margin="0,20,0,20"/>
 
-            <ListView x:Name="misComputadoras" Margin="0,20,0,20"/>
+            <ScrollView Orientation="Vertical">
+                <StackLayout Orientation="Vertical" Margin="0,20,0,40">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <StackLayout Orientation="Vertical">
+                            <Image Source="pc.png" WidthRequest="150" />
+                            <Label Text="PC-01" TextColor="#448AFF" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical">
+                            <Image Source="pc.png" WidthRequest="150" />
+                            <Label Text="PC-02" TextColor="#448AFF" HorizontalTextAlignment="Center" />
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <StackLayout Orientation="Vertical">
+                            <Image Source="pc.png" WidthRequest="150" />
+                            <Label Text="PC-03" TextColor="#448AFF" HorizontalTextAlignment="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical">
+                            <Image Source="pc.png" WidthRequest="150" />
+                            <Label Text="PC-04" TextColor="#448AFF" HorizontalTextAlignment="Center" />
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <StackLayout Orientation="Vertical">
+                            <Image Source="pc.png" WidthRequest="150" />
+                            <Label Text="PC-05" TextColor="#448AFF" HorizontalTextAlignment="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical">
+                            <Image Source="pc.png" WidthRequest="150" />
+                            <Label Text="PC-06" TextColor="#448AFF" HorizontalTextAlignment="Center" />
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <StackLayout Orientation="Vertical">
+                            <Image Source="pc.png" WidthRequest="150" />
+                            <Label Text="PC-07" TextColor="#448AFF" HorizontalTextAlignment="Center" />
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical">
+                            <Image Source="pc.png" WidthRequest="150" />
+                            <Label Text="PC-08" TextColor="#448AFF" HorizontalTextAlignment="Center" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
 
             <Button Text="Escoger computadora"
                     Clicked="SelectPC"
                     CornerRadius="20"
                     HeightRequest="55"
+                    TextColor="White"
                     BackgroundColor="#448AFF"
                     />
 

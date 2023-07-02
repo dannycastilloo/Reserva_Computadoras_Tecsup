@@ -10,13 +10,14 @@
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
                    HorizontalOptions="Center"
-                   Margin="0,0,0,40"/>
+                   Margin="0,20,0,40"/>
 
-            <Label Text="Elija la hora y la fecha para reservar su computadora" />
+            <Label Text="Elija la hora y la fecha para reservar su computadora" TextColor="#448AFF"/>
 
             <Image Source="pc.png" Margin="0,20,0,20"/>
 
-
+            <DatePicker Date="9/17/2023" Format="d" x:Name="datepicker"/>
+            <Button Text="Mostrar Fecha" Clicked="ShowDate"/>
 
             <Button Text="Confirmar Reserva"
                     Clicked="Confirmar"
