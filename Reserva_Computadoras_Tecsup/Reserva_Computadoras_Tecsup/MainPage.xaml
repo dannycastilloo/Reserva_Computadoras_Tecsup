@@ -7,13 +7,14 @@
             android:TabbedPage.ToolbarPlacement="Bottom"
             BarBackgroundColor="#448AFF"
             SelectedTabColor="White"
-            UnselectedTabColor="#D3D8E0">
+            UnselectedTabColor="#D3D8E0"
+            NavigationPage.HasNavigationBar="False">
 
     <TabbedPage.Children>
         <local:Home Title="Inicio" IconImageSource="hogar.png" />
-        <local:EscogerPC Title="Reservar" IconImageSource="agregar.png"/>
-        <local:Contacto Title="Contacto" IconImageSource="sobre.png"/>
-        <local:Usuario Title="Usuario" IconImageSource="usuario.png"/>
+        <local:Calendar Title="Calendario" IconImageSource="calendar.png"/>
+        <local:Contact Title="Contacto" IconImageSource="sobre.png"/>
+        <local:User Title="Usuario" IconImageSource="usuario.png"/>
     </TabbedPage.Children>
 
 </TabbedPage>

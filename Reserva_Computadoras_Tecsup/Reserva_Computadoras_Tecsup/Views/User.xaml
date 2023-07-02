@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Reserva_Computadoras_Tecsup.Views.User">
+    <ContentPage.Content>
+        <StackLayout Padding="40">
+
+            <Label Text="Usuario"
+                   FontSize="36"
+                   TextColor="#448AFF"
+                   FontFamily="Satoshi"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,20"/>
+
+            <StackLayout Orientation="Horizontal" Margin="0,30,0,30">
+                <Image Source="usuario.png"/>
+                <Label Text="Danny Castillo"/>
+            </StackLayout>
+
+            <Button x:Name="logOut"
+                    Text="Cerrar sesión"
+                    BackgroundColor="#448AFF"
+                    CornerRadius="20"
+                    HeightRequest="55"
+                    Margin="0,20,0,0"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

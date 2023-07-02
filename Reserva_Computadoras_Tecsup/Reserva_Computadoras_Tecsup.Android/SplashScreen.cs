@@ -17,7 +17,7 @@ using Android.Content.PM;
 
 namespace Reserva_Computadoras_Tecsup.Droid
 {
-    [Activity(Label = "Smart Reserve", Icon = "@drawable/iconTecsup", Theme = "@style/newtheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize)]
+    [Activity(Label = "Smart Reserve", Icon = "@drawable/iconTecsup", Theme = "@style/newtheme", MainLauncher = true, NoHistory = true, ConfigurationChanges = ConfigChanges.ScreenSize)]
     public class SplashScreen : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

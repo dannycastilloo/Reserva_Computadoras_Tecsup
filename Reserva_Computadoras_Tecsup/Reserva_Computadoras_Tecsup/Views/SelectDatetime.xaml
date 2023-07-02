@@ -1,22 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Reserva_Computadoras_Tecsup.Views.Reservar2">
+             x:Class="Reserva_Computadoras_Tecsup.Views.SelectDatetime">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="30">
 
             <Label Text="Reserva"
                    FontSize="36"
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
                    HorizontalOptions="Center"
-                   Margin="0,20,0,20"/>
+                   Margin="0,0,0,40"/>
 
             <Label Text="Elija la hora y la fecha para reservar su computadora" />
 
-            <Image Source="pc.png"/>
+            <Image Source="pc.png" Margin="0,20,0,20"/>
 
-            <Button Text="Confirmar Reserva" Clicked="Confirmar" />
+
+
+            <Button Text="Confirmar Reserva"
+                    Clicked="Confirmar"
+                    BackgroundColor="#448AFF"
+                    TextColor="White"
+                    CornerRadius="20"
+                    HeightRequest="50"
+                    Margin="0,20,0,20"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

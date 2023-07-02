@@ -6,7 +6,9 @@
 	<item>
 		<color android:color="@color/colorApp" />
 	</item>
-	<item android:drawable="@drawable/iconTecsup"
-		  android:gravity="center">
+	<item>
+		<bitmap android:src="@drawable/splashicon"
+				android:tileMode="disabled"
+				android:gravity="center"/>
 	</item>
 </layer-list>

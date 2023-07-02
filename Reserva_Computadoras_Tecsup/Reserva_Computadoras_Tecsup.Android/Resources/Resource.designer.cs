@@ -14,7 +14,7 @@ namespace Reserva_Computadoras_Tecsup.Droid
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.1.0.5")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.2.0.99")]
 	public partial class Resource
 	{
 		
@@ -16490,37 +16490,37 @@ namespace Reserva_Computadoras_Tecsup.Droid
 			public const int abc_vector_test = 2131165268;
 			
 			// aapt resource value: 0x7F070055
-			public const int agregar = 2131165269;
+			public const int avd_hide_password = 2131165269;
 			
 			// aapt resource value: 0x7F070056
-			public const int avd_hide_password = 2131165270;
+			public const int avd_show_password = 2131165270;
 			
 			// aapt resource value: 0x7F070057
-			public const int avd_show_password = 2131165271;
+			public const int btn_checkbox_checked_mtrl = 2131165271;
 			
 			// aapt resource value: 0x7F070058
-			public const int btn_checkbox_checked_mtrl = 2131165272;
+			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131165272;
 			
 			// aapt resource value: 0x7F070059
-			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131165273;
+			public const int btn_checkbox_unchecked_mtrl = 2131165273;
 			
 			// aapt resource value: 0x7F07005A
-			public const int btn_checkbox_unchecked_mtrl = 2131165274;
+			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131165274;
 			
 			// aapt resource value: 0x7F07005B
-			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131165275;
+			public const int btn_radio_off_mtrl = 2131165275;
 			
 			// aapt resource value: 0x7F07005C
-			public const int btn_radio_off_mtrl = 2131165276;
+			public const int btn_radio_off_to_on_mtrl_animation = 2131165276;
 			
 			// aapt resource value: 0x7F07005D
-			public const int btn_radio_off_to_on_mtrl_animation = 2131165277;
+			public const int btn_radio_on_mtrl = 2131165277;
 			
 			// aapt resource value: 0x7F07005E
-			public const int btn_radio_on_mtrl = 2131165278;
+			public const int btn_radio_on_to_off_mtrl_animation = 2131165278;
 			
 			// aapt resource value: 0x7F07005F
-			public const int btn_radio_on_to_off_mtrl_animation = 2131165279;
+			public const int calendar = 2131165279;
 			
 			// aapt resource value: 0x7F070060
 			public const int design_fab_background = 2131165280;
@@ -16676,16 +16676,19 @@ namespace Reserva_Computadoras_Tecsup.Droid
 			public const int splash = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int test_custom_background = 2131165331;
+			public const int splashicon = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int tooltip_frame_dark = 2131165332;
+			public const int test_custom_background = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int tooltip_frame_light = 2131165333;
+			public const int tooltip_frame_dark = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int usuario = 2131165334;
+			public const int tooltip_frame_light = 2131165334;
+			
+			// aapt resource value: 0x7F070097
+			public const int usuario = 2131165335;
 			
 			static Drawable()
 			{

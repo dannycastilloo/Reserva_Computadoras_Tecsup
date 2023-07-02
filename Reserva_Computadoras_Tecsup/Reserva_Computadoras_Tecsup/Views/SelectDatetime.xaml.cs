@@ -9,16 +9,16 @@ using Xamarin.Forms.Xaml;
 
 namespace Reserva_Computadoras_Tecsup.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Reservar2 : ContentPage
-    {
-        public Reservar2()
-        {
-            InitializeComponent();
-        }
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class SelectDatetime : ContentPage
+	{
+		public SelectDatetime ()
+		{
+			InitializeComponent ();
+		}
         private async void Confirmar(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Reservar3());
+            await Navigation.PushModalAsync(new ConfirmRequest());
         }
     }
 }

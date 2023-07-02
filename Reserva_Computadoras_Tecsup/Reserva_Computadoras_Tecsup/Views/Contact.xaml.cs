@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace Reserva_Computadoras_Tecsup.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Contacto : ContentPage
-    {
-        public Contacto()
-        {
-            InitializeComponent();
-        }
-    }
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Contact : ContentPage
+	{
+		public Contact ()
+		{
+			InitializeComponent ();
+		}
+	}
 }

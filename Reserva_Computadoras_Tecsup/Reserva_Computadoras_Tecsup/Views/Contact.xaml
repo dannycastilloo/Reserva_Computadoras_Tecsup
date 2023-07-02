@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Reserva_Computadoras_Tecsup.Views.Contacto">
+             x:Class="Reserva_Computadoras_Tecsup.Views.Contact">
     <ContentPage.Content>
-        <StackLayout Padding="30">
+        <StackLayout Padding="40">
             <Label Text="Contáctanos"
                    FontSize="36"
                    TextColor="#448AFF"
@@ -12,7 +12,7 @@
                    Margin="0,20,0,20"/>
 
             <Entry Placeholder="Nombre"
-                   Margin="0,30,0,10"/>
+                   Margin="0,20,0,10"/>
             <Entry Placeholder="Apellidos"
                    Margin="0,10,0,10"/>
             <Entry Placeholder="Correo electrónico"
@@ -22,7 +22,7 @@
             <Entry Placeholder="Asunto"
                    Margin="0,10,0,10"/>
             <Editor Placeholder="Descripción"
-                    HeightRequest="120"
+                    HeightRequest="110"
                     Margin="0,10,0,10"/>
 
             <Button x:Name="enviarMensaje"
@@ -30,7 +30,7 @@
                     BackgroundColor="#448AFF"
                     CornerRadius="20"
                     HeightRequest="55"
-                    Margin="0,40,0,0"/>
+                    Margin="0,20,0,0"/>
 
         </StackLayout>
     </ContentPage.Content>
