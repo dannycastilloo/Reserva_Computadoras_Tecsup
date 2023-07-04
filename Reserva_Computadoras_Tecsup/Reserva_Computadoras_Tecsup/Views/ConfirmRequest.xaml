@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Reserva_Computadoras_Tecsup.Views.ConfirmRequest">
+             x:Class="Reserva_Computadoras_Tecsup.Views.ConfirmRequest"
+             BackgroundColor="{StaticResource WindowBackgroundColor}">
     <ContentPage.Content>
         <StackLayout Padding="30">
 
@@ -10,7 +11,8 @@
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
                    HorizontalOptions="Center"
-                   Margin="0,20,0,40"/>
+                   Margin="0,20,0,40"
+                   FontAttributes="Bold"/>
 
             <Image Source="pc.png" Margin="0,20,0,20"/>
             <Label Text="Nombre" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>
@@ -25,6 +27,8 @@
                     TextColor="White"
                     CornerRadius="20"
                     HeightRequest="50"
+                    HorizontalOptions="Center"
+                    WidthRequest="250"
                     Margin="0,20,0,20"/>
 
         </StackLayout>

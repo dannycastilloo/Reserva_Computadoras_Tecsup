@@ -9,7 +9,8 @@
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
                    HorizontalTextAlignment="Center"
-                   Margin="0,20,0,20"/>
+                   Margin="0,20,0,20"
+                   FontAttributes="Bold"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

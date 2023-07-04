@@ -1,70 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Reserva_Computadoras_Tecsup.Views.SelectPc">
+             x:Class="Reserva_Computadoras_Tecsup.Views.SelectPc"
+             BackgroundColor="{StaticResource WindowBackgroundColor}">
     <ContentPage.Content>
+        
         <StackLayout Padding="30">
-
             <Label Text="Reserva"
                    FontSize="36"
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
                    HorizontalOptions="Center"
-                   Margin="0,20,0,20"/>
-
+                   Margin="0,20,0,20"
+                   FontAttributes="Bold"/>
+            
             <ScrollView Orientation="Vertical">
-                <StackLayout Orientation="Vertical" Margin="0,20,0,40">
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                        <StackLayout Orientation="Vertical">
-                            <Image Source="pc.png" WidthRequest="150" />
-                            <Label Text="PC-01" TextColor="#448AFF" HorizontalTextAlignment="Center"/>
-                        </StackLayout>
-                        <StackLayout Orientation="Vertical">
-                            <Image Source="pc.png" WidthRequest="150" />
-                            <Label Text="PC-02" TextColor="#448AFF" HorizontalTextAlignment="Center" />
-                        </StackLayout>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                        <StackLayout Orientation="Vertical">
-                            <Image Source="pc.png" WidthRequest="150" />
-                            <Label Text="PC-03" TextColor="#448AFF" HorizontalTextAlignment="Center" />
-                        </StackLayout>
-                        <StackLayout Orientation="Vertical">
-                            <Image Source="pc.png" WidthRequest="150" />
-                            <Label Text="PC-04" TextColor="#448AFF" HorizontalTextAlignment="Center" />
-                        </StackLayout>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                        <StackLayout Orientation="Vertical">
-                            <Image Source="pc.png" WidthRequest="150" />
-                            <Label Text="PC-05" TextColor="#448AFF" HorizontalTextAlignment="Center" />
-                        </StackLayout>
-                        <StackLayout Orientation="Vertical">
-                            <Image Source="pc.png" WidthRequest="150" />
-                            <Label Text="PC-06" TextColor="#448AFF" HorizontalTextAlignment="Center" />
-                        </StackLayout>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                        <StackLayout Orientation="Vertical">
-                            <Image Source="pc.png" WidthRequest="150" />
-                            <Label Text="PC-07" TextColor="#448AFF" HorizontalTextAlignment="Center" />
-                        </StackLayout>
-                        <StackLayout Orientation="Vertical">
-                            <Image Source="pc.png" WidthRequest="150" />
-                            <Label Text="PC-08" TextColor="#448AFF" HorizontalTextAlignment="Center" />
-                        </StackLayout>
-                    </StackLayout>
-                </StackLayout>
+                <ListView ItemsSource="{Binding Computers}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.RowSpan="2" Aspect="AspectFill" HeightRequest="80" WidthRequest="80" Source="pc.png" Grid.Row="0" Grid.Column="0"/>
+                                    <Label Text="{Binding Name}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Specs}" Grid.Row="1" Grid.Column="1" VerticalOptions="End" HorizontalTextAlignment="Center"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </ScrollView>
 
-            <Button Text="Escoger computadora"
+            <Button Text="Seleccionar computadora"
                     Clicked="SelectPC"
                     CornerRadius="20"
                     HeightRequest="55"
                     TextColor="White"
+                    HorizontalOptions="Center"
+                    WidthRequest="250"
                     BackgroundColor="#448AFF"
-                    />
+                        />
 
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

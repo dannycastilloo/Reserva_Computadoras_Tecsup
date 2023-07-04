@@ -9,7 +9,8 @@
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
                    HorizontalTextAlignment="Center"
-                   Margin="0,30,0,20"/>
+                   Margin="0,30,0,20"
+                   FontAttributes="Bold"/>
 
             <Entry Placeholder="Nombre"
                    Margin="0,20,0,10"
@@ -42,6 +43,8 @@
                     TextColor="White"
                     CornerRadius="20"
                     HeightRequest="55"
+                    HorizontalOptions="Center"
+                    WidthRequest="250"
                     Margin="0,20,0,0"/>
 
         </StackLayout>
