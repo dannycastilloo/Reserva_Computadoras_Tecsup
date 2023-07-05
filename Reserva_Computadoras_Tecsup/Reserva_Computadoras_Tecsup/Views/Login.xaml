@@ -1,7 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Reserva_Computadoras_Tecsup.Views.Login">
+             x:Class="Reserva_Computadoras_Tecsup.Views.Login"
+             xmlns:viewModels="clr-namespace:Reserva_Computadoras_Tecsup.ViewModels"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.BindingContext>
+        <viewModels:LoginViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout BackgroundColor="#448AFF" Padding="30">
             <Image Source="logo.png"
@@ -12,12 +16,12 @@
                     <Label Text="Bienvenido!" HorizontalOptions="Center" TextColor="#448AFF" FontSize="24" Margin="0,10,0,10"/>
 
                     <Label Text="Usuario" Margin="5,40,0,10" TextColor="#D3D8E0"/>
-                    <Entry />
+                    <Entry Text="{Binding Usuario.Correo}" />
 
                     <Label Text="Contraseña" Margin="5,40,0,10" TextColor="#D3D8E0"/>
-                    <Entry />
+                    <Entry Text="{Binding Usuario.Password}" />
 
-                    <Button x:Name="iniciarSesion"
+                    <Button Command="{Binding IniciarSesionCommand}"
                             Text="Iniciar sesión"
                             BackgroundColor="#448AFF"
                             CornerRadius="20"

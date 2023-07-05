@@ -5,51 +5,103 @@
     <ContentPage.Content>
         <StackLayout Padding="30">
 
-            <Label Text="Reserva de Computadoras"
+            <Label Text="Smart Reserve"
                    FontSize="36"
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
                    HorizontalTextAlignment="Center"
                    Margin="0,20,0,20"
                    FontAttributes="Bold"/>
-
-            <Label Text="Tus reservas"
+            <Label Text="Reserva tu computadora"
+                   FontSize="20"
+                   TextColor="#448AFF"
+                   FontFamily="Satoshi"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,-30,0,20"
+                   FontAttributes="Bold"/>
+            
+            <Label Text="Bienvenido aqui estan tus reservas!!!"
                    FontSize="20"
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
                    HorizontalTextAlignment="Start"
-                   Margin="0,30,0,0"/>
-            
-            <ScrollView Orientation="Horizontal" Margin="0,20,0,0">
-                <StackLayout Orientation="Horizontal">
+                   Margin="0,-10,0,0"/>
+
+            <ScrollView Orientation="Vertical" Margin="0,20,0,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
                     <StackLayout Orientation="Vertical">
-                        <Label Text="PC-01 - 16/08" HorizontalOptions="Center" FontSize="10" TextColor="#1C61CD"/>
-                        <Image Source="pc.png" WidthRequest="100"/>
-                        <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="10" TextColor="#1C61CD"/>
+                        <Frame BackgroundColor="LightGray" CornerRadius="20" Margin="10">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="pc.png" WidthRequest="100"/>
+                                <StackLayout Orientation="Vertical" Margin="30,20,0,0">
+                                    <Label Text="PC-01 - 16/08" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD" FontFamily="Pacifico"/>
+                                    <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="LightGray" CornerRadius="20" Margin="10">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="pc.png" WidthRequest="100"/>
+                                <StackLayout Orientation="Vertical" Margin="30,20,0,0">
+                                    <Label Text="PC-02 - 16/08" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
+                                    <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="LightGray" CornerRadius="20" Margin="10">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="pc.png" WidthRequest="100"/>
+                                <StackLayout Orientation="Vertical" Margin="30,20,0,0">
+                                    <Label Text="PC-03 - 16/08" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
+                                    <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="LightGray" CornerRadius="20" Margin="10">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="pc.png" WidthRequest="100"/>
+                                <StackLayout Orientation="Vertical" Margin="30,20,0,0">
+                                    <Label Text="PC-04 - 16/08" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
+                                    <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+
+                        
+
                     </StackLayout>
-                    <StackLayout Orientation="Vertical">
-                        <Label Text="PC-02 - 16/08" HorizontalOptions="Center" FontSize="10" TextColor="#1C61CD"/>
-                        <Image Source="pc.png" WidthRequest="100"/>
-                        <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="10" TextColor="#1C61CD"/>
+                </Grid>
+            </ScrollView>
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" Spacing="10">
+
+                    <StackLayout>
+                        <Image Source="calendar.png" WidthRequest="100" HeightRequest="100" Aspect="AspectFill"/>
+                        <Label Text="No comas ni consumas bebidas frente a las maquinas" HorizontalOptions="Center" FontSize="14"/>
                     </StackLayout>
-                    <StackLayout Orientation="Vertical">
-                        <Label Text="PC-03 - 16/08" HorizontalOptions="Center" FontSize="10" TextColor="#1C61CD"/>
-                        <Image Source="pc.png" WidthRequest="100"/>
-                        <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="10" TextColor="#1C61CD"/>
+
+                    <StackLayout>
+                        <Image Source="calendar.png" WidthRequest="100" HeightRequest="100" Aspect="AspectFill"/>
+                        <Label Text="Guarda tus datos recuerda que algunas contraseñas se quedan guardadas" HorizontalOptions="Center" FontSize="14"/>
                     </StackLayout>
-                    <StackLayout Orientation="Vertical">
-                        <Label Text="PC-04 - 16/08" HorizontalOptions="Center" FontSize="10" TextColor="#1C61CD"/>
-                        <Image Source="pc.png" WidthRequest="100"/>
-                        <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="10" TextColor="#1C61CD"/>
+
+                    <StackLayout>
+                        <Image Source="calendar.png" WidthRequest="100" HeightRequest="100" Aspect="AspectFill"/>
+                        <Label Text="No modifiques el hardware de la computadora" HorizontalOptions="Center" FontSize="14"/>
                     </StackLayout>
+
+                   
+
                 </StackLayout>
             </ScrollView>
 
-
-            <StackLayout Orientation="Vertical" Margin="0,60,0,50">
-                <Image Source="news.png"/>
-                <Label Text="Estudiantes de TECSUP participaron en el CADE 2019. Leer mas en ww.tecsup.edu.pe" TextColor="#448AFF" FontSize="12"/>
-            </StackLayout>
 
             <Button Text="Realizar reserva"
                     Clicked="Reservar"
