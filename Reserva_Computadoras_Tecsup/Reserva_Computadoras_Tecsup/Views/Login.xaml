@@ -9,7 +9,7 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#448AFF" Padding="30">
             <Image Source="logo.png"
-                   Margin="10,30,10,30"/>
+                   Margin="10,40,10,30"/>
 
             <Frame BackgroundColor="White" Padding="30" HeightRequest="500" CornerRadius="30">
                 <StackLayout Margin="10,40,10,30">
@@ -24,6 +24,7 @@
                     <Button Command="{Binding IniciarSesionCommand}"
                             Text="Iniciar sesión"
                             BackgroundColor="#448AFF"
+                            TextColor="White"
                             CornerRadius="20"
                             Margin="0,40,0,0"/>
                 </StackLayout>
