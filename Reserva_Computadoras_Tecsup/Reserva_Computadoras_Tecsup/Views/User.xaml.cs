@@ -16,5 +16,13 @@ namespace Reserva_Computadoras_Tecsup.Views
 		{
 			InitializeComponent ();
 		}
-	}
+        private async void ViewMails(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Mails());
+        }
+        private async void ViewRules(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Rules());
+        }
+    }
 }

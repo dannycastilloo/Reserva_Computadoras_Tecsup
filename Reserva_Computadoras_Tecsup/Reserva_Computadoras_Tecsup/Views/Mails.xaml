@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Reserva_Computadoras_Tecsup.Views.Mails"
+             BackgroundColor="{StaticResource WindowBackgroundColor}">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Padding="20">
+                <Label Text="Bandeja de Entrada"
+                       FontSize="36"
+                       TextColor="#448AFF"
+                       FontFamily="Satoshi"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,30,0,20"
+                       FontAttributes="Bold"/>
+
+                <Frame Margin="0,30,0,0" BackgroundColor="#448AFF" CornerRadius="20">
+                    <Frame BackgroundColor="White" CornerRadius="10">
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Persona" HorizontalOptions="Start" TextColor="White" FontSize="16"/>
+                                <Label Text="10-07-2023 12:00" HorizontalOptions="End" HorizontalTextAlignment="End" TextColor="White" FontSize="14" />
+                            </StackLayout>
+                            <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." TextColor="#1C61CD" FontSize="12"/>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

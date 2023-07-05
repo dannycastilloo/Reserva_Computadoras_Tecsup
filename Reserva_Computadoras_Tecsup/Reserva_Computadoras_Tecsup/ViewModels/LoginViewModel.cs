@@ -24,7 +24,7 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
                 OnPropertyChanged(nameof(Usuario));
             }
         }
-        // bool que cambia si el usuario fue validado o no
+        
         public bool LoginSuccessful
         {
             get { return _loginSuccessful; }
@@ -68,9 +68,6 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
                     await App.Current.MainPage.DisplayAlert("Éxito", "Inicio de sesión exitoso", "OK");
 
                     // Continuar con las operaciones necesarias después de la autenticación exitosa
-
-                    //var homePage = new Home();
-                    //await App.Current.MainPage.Navigation.PushAsync(homePage);
                     LoginSuccessful = true;
 
                 }

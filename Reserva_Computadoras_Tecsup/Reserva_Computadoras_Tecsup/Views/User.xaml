@@ -30,7 +30,7 @@
                     <Image Source="email.png" WidthRequest="90"/>
                     <StackLayout Margin="35,15,0,0">
                         <Label Text="Bandeja de Entrada" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
-                        <Button Text="Ver aquí" BackgroundColor="White" TextColor="#448AFF" CornerRadius="20" HeightRequest="35" HorizontalOptions="Center" WidthRequest="100" FontSize="12" Margin="0,5,0,0"/>
+                        <Button Clicked="ViewMails" Text="Ver aquí" BackgroundColor="White" TextColor="#448AFF" CornerRadius="20" HeightRequest="35" HorizontalOptions="Center" WidthRequest="100" FontSize="12" Margin="0,5,0,0"/>
                     </StackLayout>
                 </StackLayout>
             </Frame>
@@ -40,7 +40,7 @@
                     <Image Source="normas.png" WidthRequest="90"/>
                     <StackLayout Margin="40,15,0,0">
                         <Label Text="Reglas y Normas" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
-                        <Button Text="Ver aquí" BackgroundColor="White" TextColor="#448AFF" CornerRadius="20" HeightRequest="35" HorizontalOptions="Center" WidthRequest="100" FontSize="12" Margin="0,5,0,0"/>
+                        <Button Clicked="ViewRules" Text="Ver aquí" BackgroundColor="White" TextColor="#448AFF" CornerRadius="20" HeightRequest="35" HorizontalOptions="Center" WidthRequest="100" FontSize="12" Margin="0,5,0,0"/>
                     </StackLayout>
                 </StackLayout>
             </Frame>
@@ -54,8 +54,6 @@
                     HorizontalOptions="Center"
                     WidthRequest="250"
                     Margin="0,20,0,0"/>
-
-
 
         </StackLayout>
     </ContentPage.Content>
