@@ -12,6 +12,7 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
 {
     public class LoginViewModel : INotifyPropertyChanged
     {
+        private bool _loginSuccessful;
         private Usuario _usuario;
 
         public Usuario Usuario
@@ -21,6 +22,16 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
             {
                 _usuario = value;
                 OnPropertyChanged(nameof(Usuario));
+            }
+        }
+        // bool que cambia si el usuario fue validado o no
+        public bool LoginSuccessful
+        {
+            get { return _loginSuccessful; }
+            set
+            {
+                _loginSuccessful = value;
+                OnPropertyChanged(nameof(LoginSuccessful));
             }
         }
 
@@ -58,8 +69,9 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
 
                     // Continuar con las operaciones necesarias después de la autenticación exitosa
 
-                    var homePage = new Home();
-                    await App.Current.MainPage.Navigation.PushAsync(homePage);
+                    //var homePage = new Home();
+                    //await App.Current.MainPage.Navigation.PushAsync(homePage);
+                    LoginSuccessful = true;
 
                 }
                 catch (FirebaseAuthException ex)
