@@ -1,4 +1,4 @@
-﻿//using SQLite;
+﻿using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.SymbolStore;
@@ -6,17 +6,20 @@ using System.Text;
 
 namespace Reserva_Computadoras_Tecsup.Models
 {
-    public class Computer
+    [FirestoreData]
+    public class Computer : FirebaseDocument
     {
-        public int Id { get; set; }
+        [FirestoreProperty]
         public string Codigo { get; set; }
+
+        [FirestoreProperty]
         public string Specs { get; set; }
+
+        [FirestoreProperty]
         public string Marca { get; set; }
+
+        [FirestoreProperty]
         public bool Disponibilidad { get; set; }
 
-        public override string ToString()
-        {
-            return Codigo;
-        }
     }
 }
