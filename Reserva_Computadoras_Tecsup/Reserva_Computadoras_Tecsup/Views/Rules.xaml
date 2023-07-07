@@ -10,7 +10,7 @@
                        TextColor="#448AFF"
                        FontFamily="Satoshi"
                        HorizontalTextAlignment="Center"
-                       Margin="0,30,0,20"
+                       Margin="0,30,0,30"
                        FontAttributes="Bold"/>
                 
                 <Label Text="Regla N° 1" TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>

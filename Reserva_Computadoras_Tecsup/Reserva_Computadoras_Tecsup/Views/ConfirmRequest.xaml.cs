@@ -12,13 +12,14 @@ namespace Reserva_Computadoras_Tecsup.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ConfirmRequest : ContentPage
 	{
-		public ConfirmRequest ()
+		public ConfirmRequest (string informacionHoras)
 		{
 			InitializeComponent ();
-		}
+            horasLabel.Text = informacionHoras;
+        }
         private async void VolverInicio(object sender, EventArgs e)
         {
-            await Navigation.PopModalAsync();
+            await Navigation.PopAsync();
         }
     }
 }

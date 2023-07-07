@@ -22,22 +22,22 @@ namespace Reserva_Computadoras_Tecsup.Views
             {
                 new Computer
                 {
-                    Name = "Computadora1",
+                    Codigo = "Computadora 1",
                     Specs = "Intel i9 12900k - 64GB RAM"
                 },
                 new Computer
                 {
-                    Name = "Computadora1",
+                    Codigo = "Computadora 2",
                     Specs = "Intel i9 12900k - 32GB RAM"
                 },
                 new Computer
                 {
-                    Name = "Computadora1",
+                    Codigo = "Computadora 3",
                     Specs = "Intel i9 12900k - 32GB RAM"
                 },
                 new Computer
                 {
-                    Name = "Computadora1",
+                    Codigo = "Computadora 4",
                     Specs = "Intel i9 12900k - 64GB RAM"
                 }
             };

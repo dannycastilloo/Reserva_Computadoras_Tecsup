@@ -15,9 +15,9 @@
                    FontAttributes="Bold"/>
 
             <Image Source="pc.png" Margin="0,20,0,20"/>
-            <Label Text="Nombre" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>
-            <Label Text="Computadora" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10" />
-            <Label Text="Fecha y hora" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" Margin="0,0,0,20" BackgroundColor="#DBE9FF" Padding="10"/>
+            <Label Text="Danny Castillo" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>
+            <Label Text="Computadora 1" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10" />
+            <Label x:Name="horasLabel" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" Margin="0,0,0,20" BackgroundColor="#DBE9FF" Padding="10"/>
 
             <Label Text="Si lo desea, puede revisar y modificar sus reservas en Mis Reservas y verificarlas en Google Calendar" TextColor="#7086A9" HorizontalTextAlignment="Center" />
 
