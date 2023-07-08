@@ -15,7 +15,7 @@
                    FontAttributes="Bold"/>
             
             <ScrollView Orientation="Vertical">
-                <ListView ItemsSource="{Binding Computers}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped">
+                <ListView ItemsSource="{Binding Computer}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -30,7 +30,7 @@
                                     </Grid.ColumnDefinitions>
                                     <Image Grid.RowSpan="2" Aspect="AspectFill" HeightRequest="80" WidthRequest="80" Source="pc.png" Grid.Row="0" Grid.Column="0"/>
                                     <Label Text="{Binding Codigo}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Specs}" Grid.Row="1" Grid.Column="1" VerticalOptions="End" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Specs}" Grid.Row="2" Grid.Column="1" VerticalOptions="End" HorizontalTextAlignment="Center"/>
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>

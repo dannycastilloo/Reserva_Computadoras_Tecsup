@@ -24,7 +24,7 @@
                    HorizontalOptions="Center"
                    FontSize="14"/>
 
-            <DatePicker MinimumDate="07/10/2023" MaximumDate="12/24/2023" Format="d" x:Name="datepicker" HorizontalOptions="Center"/>
+            <DatePicker x:Name="datepicker" Format="dd/MM/yyyy" MinimumDate="07/10/2023" MaximumDate="12/24/2023" HorizontalOptions="Center"/>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <StackLayout Orientation="Vertical">

@@ -1,4 +1,5 @@
 ﻿using Reserva_Computadoras_Tecsup.Models;
+using Reserva_Computadoras_Tecsup.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,47 +15,31 @@ namespace Reserva_Computadoras_Tecsup.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SelectPc : ContentPage
     {
-        public IList<Computer> Computers { get; private set; }
+        private ReservasViewModel viewModel;
         public SelectPc()
         {
             InitializeComponent();
-            Computers = new List<Computer>
-            {
-                new Computer
-                {
-                    Codigo = "Computadora 1",
-                    Specs = "Intel i9 12900k - 64GB RAM"
-                },
-                new Computer
-                {
-                    Codigo = "Computadora 2",
-                    Specs = "Intel i9 12900k - 32GB RAM"
-                },
-                new Computer
-                {
-                    Codigo = "Computadora 3",
-                    Specs = "Intel i9 12900k - 32GB RAM"
-                },
-                new Computer
-                {
-                    Codigo = "Computadora 4",
-                    Specs = "Intel i9 12900k - 64GB RAM"
-                }
-            };
-            BindingContext = this;
+            viewModel = new ReservasViewModel();
+            BindingContext = viewModel;
+
         }
         
         private async void SelectPC(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new SelectDatetime());
+            var selectedComputer = viewModel.SelectedComputer;
+            await Navigation.PushModalAsync(new SelectDatetime(selectedComputer));
         }
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             Computer selectedItem = e.SelectedItem as Computer;
+            if (selectedItem != null)
+                viewModel.SelectedComputer = selectedItem;
         }
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             Computer tappedItem = e.Item as Computer;
+            if (tappedItem != null)
+                viewModel.SelectedComputer = tappedItem;
         }
     }
 }

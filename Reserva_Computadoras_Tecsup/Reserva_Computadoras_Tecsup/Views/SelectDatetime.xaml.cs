@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Reserva_Computadoras_Tecsup.Models;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -14,21 +15,27 @@ namespace Reserva_Computadoras_Tecsup.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SelectDatetime : ContentPage
 	{
-		public SelectDatetime ()
-		{
+        private Computer selectedComputer;
+        public SelectDatetime (Computer computer)
+        {
 			InitializeComponent ();
-		}
+            selectedComputer = computer;
+        }
 
         private async void Confirmar(object sender, EventArgs e)
         {
 
+            DateTime fechaSeleccionada = datepicker.Date;
             DateTime horaInicio = DateTime.Today.Add(horaInicioPicker.Time);
             DateTime horaFin = DateTime.Today.Add(horaFinPicker.Time);
 
-            CultureInfo cultura = new CultureInfo("es-ES");
-            string informacionHoras = $"{horaInicio.ToString("dd 'de' MMMM   hh:mm tt", cultura)} - {horaFin.ToString("HH:mm tt", cultura)}";
+            string fecha = fechaSeleccionada.ToString("dd/MM");
+            string horaInicioTexto = horaInicio.ToString("hh:mm tt");
+            string horaFinTexto = horaFin.ToString("hh:mm tt");
 
-            await Navigation.PushModalAsync(new ConfirmRequest(informacionHoras));
+            string informacionHoras = $"{fecha} {horaInicioTexto} - {horaFinTexto}";
+
+            await Navigation.PushModalAsync(new ConfirmRequest(informacionHoras, selectedComputer));
         }
     }
 }

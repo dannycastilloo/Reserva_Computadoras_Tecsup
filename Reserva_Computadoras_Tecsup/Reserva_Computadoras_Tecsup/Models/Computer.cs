@@ -13,10 +13,5 @@ namespace Reserva_Computadoras_Tecsup.Models
         public string Specs { get; set; }
         public string Marca { get; set; }
         public bool Disponibilidad { get; set; }
-
-        public override string ToString()
-        {
-            return Codigo;
-        }
     }
 }

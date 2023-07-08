@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Reserva_Computadoras_Tecsup.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,14 +13,19 @@ namespace Reserva_Computadoras_Tecsup.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ConfirmRequest : ContentPage
 	{
-		public ConfirmRequest (string informacionHoras)
+        public Usuario CurrentUser { get; set; }
+        public Computer SelectedComputer { get; set; }
+        public ConfirmRequest (string informacionHoras, Computer selectedComputer)
 		{
 			InitializeComponent ();
             horasLabel.Text = informacionHoras;
+            SelectedComputer = selectedComputer;
+            CurrentUser = new Usuario { Nombres = "Danny Castillo" };
+            BindingContext = this;
         }
         private async void VolverInicio(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+            await Navigation.PopToRootAsync();
         }
     }
 }
