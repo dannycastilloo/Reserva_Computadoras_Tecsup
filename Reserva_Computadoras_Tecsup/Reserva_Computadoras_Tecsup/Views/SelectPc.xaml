@@ -1,10 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Reserva_Computadoras_Tecsup.ViewModels"
              x:Class="Reserva_Computadoras_Tecsup.Views.SelectPc"
              BackgroundColor="{StaticResource WindowBackgroundColor}">
+    <ContentPage.BindingContext>
+        <viewmodels:ComputerViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
-        
+
         <StackLayout Padding="30">
             <Label Text="Reserva"
                    FontSize="36"
@@ -13,9 +17,10 @@
                    HorizontalOptions="Center"
                    Margin="0,20,0,20"
                    FontAttributes="Bold"/>
-            
+
             <ScrollView Orientation="Vertical">
                 <ListView ItemsSource="{Binding Computers}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped">
+
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -49,6 +54,6 @@
                         />
 
         </StackLayout>
-        
+
     </ContentPage.Content>
 </ContentPage>
