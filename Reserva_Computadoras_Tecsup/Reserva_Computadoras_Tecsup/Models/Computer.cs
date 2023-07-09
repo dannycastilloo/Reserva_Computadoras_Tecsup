@@ -8,7 +8,7 @@ namespace Reserva_Computadoras_Tecsup.Models
 {
     public class Computer
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Codigo { get; set; }
         public string Specs { get; set; }
         public string Marca { get; set; }

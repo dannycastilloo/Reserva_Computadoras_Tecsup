@@ -16,25 +16,50 @@ namespace Reserva_Computadoras_Tecsup.Views
     public partial class SelectPc : ContentPage
     {
         private ReservasViewModel viewModel;
+
         public SelectPc()
         {
             InitializeComponent();
             viewModel = new ReservasViewModel();
             BindingContext = viewModel;
 
+            LoadComputers();
         }
-        
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await LoadComputers();
+
+            try
+            {
+                // Cargar las computadoras en el modelo de vista al mostrar la página
+                await viewModel.LoadComputers();
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", $"Error al cargar los datos: {ex.Message}", "Aceptar");
+            }
+        }
+        private async Task LoadComputers()
+        {
+            // Llamar al método LoadComputers() del ReservasViewModel
+            await viewModel.LoadComputers();
+        }
+
         private async void SelectPC(object sender, EventArgs e)
         {
             var selectedComputer = viewModel.SelectedComputer;
             await Navigation.PushModalAsync(new SelectDatetime(selectedComputer));
         }
+
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             Computer selectedItem = e.SelectedItem as Computer;
             if (selectedItem != null)
                 viewModel.SelectedComputer = selectedItem;
         }
+
         private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             Computer tappedItem = e.Item as Computer;
