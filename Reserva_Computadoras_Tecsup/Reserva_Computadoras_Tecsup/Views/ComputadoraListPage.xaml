@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Reserva_Computadoras_Tecsup.Views.ComputadoraListPage">
+    <ContentPage.ToolbarItems>
+        
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <ListView x:Name="ComputadoraListView" 
+                  ItemsSource="{Binding computers}"
+                  HasUnevenRows="True"            
+                  IsRefreshing="True"
+                  IsPullToRefreshEnabled="True"
+                  >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <!--<ViewCell.ContextActions>
+                                <MenuItem Text="Edit"
+                                          x:Name="EditMenuItem"
+                                          CommandParameter="{Binding Id}"
+                                          Clicked="EditMenuItem_Clicked"></MenuItem>
+                                <MenuItem Text="Delete"
+                                          x:Name="DeleteMenuItem"
+                                          CommandParameter="{Binding Id}"
+                                          Clicked="DeleteMenuItem_Clicked"></MenuItem>
+                            </ViewCell.ContextActions>-->
+                            <SwipeView>
+                                
+
+                                <StackLayout Orientation="Horizontal" Padding="5">
+                                    <Frame Padding="0"
+                                   HeightRequest="60"
+                                   WidthRequest="60"
+                                   BackgroundColor="White"
+                                   CornerRadius="100"
+                                   BorderColor="Teal"
+                                   IsClippedToBounds="True">
+                                        <Frame.Content>
+                                            <Image Source="pc.png" Aspect="Fill"/>
+                                        </Frame.Content>
+                                    </Frame>
+                                   
+
+                                    <StackLayout HorizontalOptions="StartAndExpand">
+                                        <Label Text="{Binding Codigo}" FontSize="Medium" />
+                                        <Label Text="{Binding Specs}"/>
+                                        <Label Text="{Binding Marca}"/>
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="Center"
+                                         HorizontalOptions="EndAndExpand">
+                                        <Image Source="edit.png"
+                                       HeightRequest="20"
+                                       WidthRequest="20">
+                                            
+                                        </Image>
+                                        
+
+                                    </StackLayout>
+                                </StackLayout>
+                            </SwipeView>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

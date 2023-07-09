@@ -29,23 +29,6 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
             }
         }
 
-        public ReservasViewModel()
-        {
-            computerRepository = new ComputerRepository();
-            Computers = new List<Computer>();
-        }
-
-        public async Task LoadComputers()
-        {
-            var loadedComputers = await computerRepository.GetAll();
-            Computers.Clear();
-            foreach (var computer in loadedComputers)
-            {
-                Computers.Add(computer);
-            }
-            Debug.WriteLine($"Cantidad de computadoras cargadas: {Computers.Count}");
-        }
-
 
         private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {

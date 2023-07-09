@@ -17,34 +17,26 @@ namespace Reserva_Computadoras_Tecsup.Views
     {
         private ReservasViewModel viewModel;
 
+        ComputerRepository computerRepository = new ComputerRepository();
+        ListView listView;
+
         public SelectPc()
         {
             InitializeComponent();
-            viewModel = new ReservasViewModel();
-            BindingContext = viewModel;
+            listView = ComputadoraListView; // Asigna el ListView al nuevo identificador "listView"
 
-            LoadComputers();
+            listView.RefreshCommand = new Command(() =>
+            {
+                OnAppearing();
+            });
         }
 
         protected override async void OnAppearing()
         {
-            base.OnAppearing();
-            await LoadComputers();
-
-            try
-            {
-                // Cargar las computadoras en el modelo de vista al mostrar la página
-                await viewModel.LoadComputers();
-            }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Error", $"Error al cargar los datos: {ex.Message}", "Aceptar");
-            }
-        }
-        private async Task LoadComputers()
-        {
-            // Llamar al método LoadComputers() del ReservasViewModel
-            await viewModel.LoadComputers();
+            var computers = await computerRepository.GetAll();
+            listView.ItemsSource = null;
+            listView.ItemsSource = computers;
+            listView.IsRefreshing = false;
         }
 
         private async void SelectPC(object sender, EventArgs e)

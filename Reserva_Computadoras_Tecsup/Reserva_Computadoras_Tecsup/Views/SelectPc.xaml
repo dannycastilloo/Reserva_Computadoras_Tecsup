@@ -4,9 +4,6 @@
              xmlns:viewModels="clr-namespace:Reserva_Computadoras_Tecsup.ViewModels"
              x:Class="Reserva_Computadoras_Tecsup.Views.SelectPc"
              BackgroundColor="{StaticResource WindowBackgroundColor}">
-    <ContentPage.BindingContext>
-        <viewModels:ReservasViewModel x:Name="ViewModel" />
-    </ContentPage.BindingContext>
     <ContentPage.Content>
 
         <StackLayout Padding="30">
@@ -19,7 +16,7 @@
                    FontAttributes="Bold"/>
 
             <ScrollView Orientation="Vertical">
-                <ListView ItemsSource="{Binding Computers}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped">
+                <ListView x:Name="ComputadoraListView" ItemsSource="{Binding computers}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -35,6 +32,7 @@
                                     <Image Grid.RowSpan="2" Aspect="AspectFill" HeightRequest="80" WidthRequest="80" Source="pc.png" Grid.Row="0" Grid.Column="0"/>
                                     <Label Text="{Binding Codigo}" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center"/>
                                     <Label Text="{Binding Specs}" Grid.Row="2" Grid.Column="0" VerticalOptions="End" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Marca}" Grid.Row="2" Grid.Column="0" VerticalOptions="End" HorizontalTextAlignment="Center"/>
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>

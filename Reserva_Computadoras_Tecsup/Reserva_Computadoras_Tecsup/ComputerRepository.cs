@@ -60,7 +60,9 @@ namespace Reserva_Computadoras_Tecsup
             await firebaseClient.Child(nameof(Computer) + "/" + id).DeleteAsync();
             return true;
         }
+
         
+
 
 
     }
