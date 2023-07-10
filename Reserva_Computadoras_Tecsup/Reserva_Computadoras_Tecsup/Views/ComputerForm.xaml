@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Reserva_Computadoras_Tecsup.Views.ComputerForm">
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Label Text="Registro de Computadora"
+                   FontSize="36"
+                   TextColor="#448AFF"
+                   FontFamily="Satoshi"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,40"
+                   FontAttributes="Bold"/>
+
+            <Entry Placeholder="Código" x:Name="codigoEntry" />
+            <Entry Placeholder="Especificaciones" x:Name="specsEntry" />
+            <Entry Placeholder="Marca" x:Name="marcaEntry" />
+
+            <Switch x:Name="disponibilidadSwitch" IsToggled="true" />
+
+            <Button Text="Registrar"
+                    Clicked="RegistrarComputadora"
+                    BackgroundColor="#448AFF"
+                    TextColor="White"
+                    CornerRadius="20"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    WidthRequest="250"
+                    Margin="0,20,0,20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

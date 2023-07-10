@@ -3,6 +3,7 @@ using Reserva_Computadoras_Tecsup.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Reserva_Computadoras_Tecsup.ViewModels
 {
@@ -10,9 +11,10 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
     {
         public IList<Computer> Computers { get; private set; }
 
-        public ComputersViewModel()
+        public async Task LoadComputersAsync()
         {
-            Computers = ComputerService.GetComputers();
+            var computerService = new ComputerService();
+            Computers = await computerService.GetComputers();
         }
     }
 }

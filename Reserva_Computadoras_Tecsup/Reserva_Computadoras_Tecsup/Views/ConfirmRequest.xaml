@@ -14,12 +14,11 @@
                    Margin="0,20,0,40"
                    FontAttributes="Bold"/>
 
-            <Image Source="pc.png" Margin="0,20,0,20"/>
-            <Label Text="{Binding CurrentUser.Nombres}" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>
-            <Label Text="{Binding SelectedComputer.Codigo}" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10" />
+            <Image Source="pc.png" Margin="0,20,0,0"/>
+            <Label Text="{Binding SelectedComputer.Codigo}" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>
             <Label x:Name="horasLabel" TextColor="#448AFF" FontFamily="Satoshi" HorizontalTextAlignment="Center" Margin="0,0,0,20" BackgroundColor="#DBE9FF" Padding="10"/>
 
-            <Label Text="Si lo desea, puede revisar y modificar sus reservas en Mis Reservas y verificarlas en Google Calendar" TextColor="#7086A9" HorizontalTextAlignment="Center" />
+            <Label Text="Si lo desea, puede revisar sus reservas en la vista principal de la aplicación." TextColor="#7086A9" HorizontalTextAlignment="Center" />
 
             <Button Text="Ir a mis reservas"
                     Clicked="VolverInicio"

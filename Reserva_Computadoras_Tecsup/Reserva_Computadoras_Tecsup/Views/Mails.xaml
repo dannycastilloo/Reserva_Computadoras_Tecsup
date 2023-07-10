@@ -5,26 +5,53 @@
              BackgroundColor="{StaticResource WindowBackgroundColor}">
     <ContentPage.Content>
         <ScrollView Orientation="Vertical">
-            <StackLayout Padding="20">
+            <StackLayout Padding="30" BackgroundColor="#448AFF">
                 <Label Text="Bandeja de Entrada"
                        FontSize="36"
-                       TextColor="#448AFF"
+                       TextColor="White"
                        FontFamily="Satoshi"
                        HorizontalTextAlignment="Center"
-                       Margin="0,30,0,20"
+                       Margin="0,30,0,30"
                        FontAttributes="Bold"/>
 
-                <Frame Margin="0,30,0,0" BackgroundColor="#448AFF" CornerRadius="20">
-                    <Frame BackgroundColor="White" CornerRadius="10">
+
+                <StackLayout Padding="10">
+                    <Frame BackgroundColor="White" CornerRadius="20" Padding="20" Margin="0,0,0,15">
                         <StackLayout Orientation="Vertical">
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="Persona" HorizontalOptions="Start" TextColor="White" FontSize="16"/>
-                                <Label Text="10-07-2023 12:00" HorizontalOptions="End" HorizontalTextAlignment="End" TextColor="White" FontSize="14" />
-                            </StackLayout>
-                            <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." TextColor="#1C61CD" FontSize="12"/>
+                            <Label Text="Anuncio de disponibilidad de nuevas computadoras" TextColor="#1C61CD" FontSize="16"/>
+                            <Label Text="Nos complace informarles que se han agregado nuevas computadoras al laboratorio de informática. A partir de mañana, podrán realizar reservas adicionales y aprovechar al máximo estos recursos actualizados. Recuerden utilizar el sistema de reserva en línea para garantizar su acceso."
+                                   TextColor="#1C61CD" FontSize="14"/>
                         </StackLayout>
                     </Frame>
-                </Frame>
+                    <Frame BackgroundColor="White" CornerRadius="20" Padding="20" Margin="0,0,0,15">
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="Mantenimiento programado del sistema de reservas" TextColor="#1C61CD" FontSize="16"/>
+                            <Label Text="Queremos informarles que el sistema de reservas de computadoras estará en mantenimiento programado el próximo sábado de 9:00 a.m. a 12:00 p.m. Durante este tiempo, no será posible realizar nuevas reservas ni acceder al sistema. Les agradecemos su comprensión y les recomendamos planificar sus actividades de acuerdo a esta situación."
+                                   TextColor="#1C61CD" FontSize="14"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame BackgroundColor="White" CornerRadius="20" Padding="20" Margin="0,0,0,15">
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="Actualización de normas para el uso de computadoras" TextColor="#1C61CD" FontSize="16"/>
+                            <Label Text="Les recordamos que es responsabilidad de cada uno de ustedes utilizar las computadoras de manera adecuada y respetuosa. Queremos enfatizar la importancia de no instalar software no autorizado, acceder a contenido inapropiado o realizar acciones que puedan afectar la seguridad de las computadoras."
+                                   TextColor="#1C61CD" FontSize="14"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame BackgroundColor="White" CornerRadius="20" Padding="20" Margin="0,0,0,15">
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="Recordatorio de horarios de reserva" TextColor="#1C61CD" FontSize="16"/>
+                            <Label Text="Queremos recordarles que es fundamental respetar los horarios de reserva de las computadoras. Les solicitamos llegar a tiempo y liberar las computadoras al finalizar su uso para permitir que otros estudiantes puedan acceder a ellas. Les pedimos su colaboración para mantener un ambiente de estudio eficiente y equitativo."
+                                   TextColor="#1C61CD" FontSize="14"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame BackgroundColor="White" CornerRadius="20" Padding="20" Margin="0,0,0,15">
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="Actualización del software en las computadoras" TextColor="#1C61CD" FontSize="16"/>
+                            <Label Text="Les informamos que se ha realizado una actualización del software en las computadoras del laboratorio de informática. Esta actualización incluye mejoras en el rendimiento y la seguridad de los equipos. Les invitamos a utilizar las computadoras actualizadas y aprovechar las nuevas funcionalidades disponibles."
+                                   TextColor="#1C61CD" FontSize="14"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

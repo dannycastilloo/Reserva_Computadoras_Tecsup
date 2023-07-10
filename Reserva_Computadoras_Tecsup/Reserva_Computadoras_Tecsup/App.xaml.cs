@@ -11,7 +11,14 @@ namespace Reserva_Computadoras_Tecsup
         public App()
         {
             InitializeComponent();
+            //Login
             MainPage = new Views.Login();
+
+            //App sin login
+            //MainPage = new NavigationPage(new Home());
+
+            //App sin login
+            //MainPage = new ComputerForm();
         }
 
         protected override void OnStart()

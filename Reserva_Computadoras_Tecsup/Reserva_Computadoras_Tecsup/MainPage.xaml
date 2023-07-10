@@ -13,7 +13,6 @@
 
     <TabbedPage.Children>
         <local:Home Title="Inicio" IconImageSource="hogar.png" />
-        <local:Calendar Title="Calendario" IconImageSource="calendar.png"/>
         <local:Contact Title="Contacto" IconImageSource="sobre.png"/>
         <local:User Title="Usuario" IconImageSource="usuario.png"/>
     </TabbedPage.Children>

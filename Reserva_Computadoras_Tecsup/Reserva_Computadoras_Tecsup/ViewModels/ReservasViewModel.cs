@@ -5,15 +5,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Reserva_Computadoras_Tecsup.ViewModels
 {
     public class ReservasViewModel : INotifyPropertyChanged
     {
         private Computer selectedComputer;
-        public event PropertyChangedEventHandler PropertyChanged;
+        private ComputerService computerService;
+        private FirebaseService firebaseService;
 
-        public IList<Computer> Computer { get; private set; }
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public Computer SelectedComputer
         {
@@ -28,13 +30,29 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
             }
         }
 
+        public IList<Computer> Computers { get; private set; }
+
         public ReservasViewModel()
         {
-            Computer = ComputerService.GetComputers();
+            computerService = new ComputerService();
+            LoadComputersAsync();
+            firebaseService = new FirebaseService();
+        }
+        private async Task LoadComputersAsync()
+        {
+            Computers = await computerService.GetComputers(); // Utilizar await para esperar a que la tarea se complete
         }
         private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        public async Task AddReservation(Reservation reservation)
+        {
+            await firebaseService.AddReservation(reservation);
+        }
+        public async Task<IList<Reservation>> GetReservationsByUserId(int userId)
+        {
+            return await firebaseService.GetReservationsByUserId(userId);
         }
     }
 }

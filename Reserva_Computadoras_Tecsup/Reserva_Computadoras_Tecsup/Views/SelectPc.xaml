@@ -13,9 +13,9 @@
                    HorizontalOptions="Center"
                    Margin="0,20,0,20"
                    FontAttributes="Bold"/>
-            
+
             <ScrollView Orientation="Vertical">
-                <ListView ItemsSource="{Binding Computer}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped">
+                <ListView x:Name="listView" ItemsSource="{Binding Computers}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

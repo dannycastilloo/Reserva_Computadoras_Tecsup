@@ -1,36 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Reserva_Computadoras_Tecsup.Services
 {
     public class ComputerService
     {
-        public static IList<Models.Computer> GetComputers()
+        private FirebaseService firebaseService;
+
+        public ComputerService()
         {
-            return new List<Models.Computer>
-            {
-                new Models.Computer
-                {
-                    Codigo = "Computadora 1",
-                    Specs = "Intel i9 12900k - 64GB RAM"
-                },
-                new Models.Computer
-                {
-                    Codigo = "Computadora 2",
-                    Specs = "Intel i9 12900k - 32GB RAM"
-                },
-                new Models.Computer
-                {
-                    Codigo = "Computadora 3",
-                    Specs = "Intel i9 12900k - 32GB RAM"
-                },
-                new Models.Computer
-                {
-                    Codigo = "Computadora 4",
-                    Specs = "Intel i9 12900k - 64GB RAM"
-                }
-            };
+            firebaseService = new FirebaseService();
+        }
+
+        public async Task<IList<Models.Computer>> GetComputers()
+        {
+            return await firebaseService.GetComputers();
         }
     }
 }

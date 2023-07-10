@@ -5,28 +5,49 @@
     <ContentPage.Content>
         <ScrollView Orientation="Vertical">
             <StackLayout Padding="30">
-                <Label Text="Bandeja de Entrada"
+                <Label Text="Reglas y Normas"
                        FontSize="36"
                        TextColor="#448AFF"
                        FontFamily="Satoshi"
                        HorizontalTextAlignment="Center"
                        Margin="0,30,0,30"
                        FontAttributes="Bold"/>
-                
-                <Label Text="Regla N° 1" TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>
-                <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10" Margin="0,0,0,20"/>
 
-                <Label Text="Regla N° 2" TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>
-                <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10" Margin="0,0,0,20"/>
-
-                <Label Text="Regla N° 3" TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>
-                <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10" Margin="0,0,0,20"/>
-
-                <Label Text="Regla N° 4" TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>
-                <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10" Margin="0,0,0,20"/>
-
-                <Label Text="Regla N° 5" TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10"/>
-                <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" BackgroundColor="#DBE9FF" Padding="10" Margin="0,0,0,20"/>
+                <Frame BackgroundColor="#DBE9FF" CornerRadius="20" Margin="0,0,0,15">
+                    <StackLayout>
+                        <Label Text="Regla N° 1" TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center"/>
+                        <Label Text="Realizar sus reservas de acuerdo con los horarios establecidos por la institución. No se permitirá el uso de las computadoras fuera de los períodos asignados."
+                               TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" Margin="0,0,0,10"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#DBE9FF" CornerRadius="20" Margin="0,0,0,15">
+                    <StackLayout>
+                        <Label Text="Regla N° 2" TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center"/>
+                        <Label Text="Utilizar las computadoras de manera responsable y respetuosa. No se permite el acceso a contenido inapropiado, la descarga de archivos ilegales o el uso indebido de los programas instalados."
+                               TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" Margin="0,0,0,10"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#DBE9FF" CornerRadius="20" Margin="0,0,0,15">
+                    <StackLayout>
+                        <Label Text="Regla N° 3" TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center"/>
+                        <Label Text="Cada estudiante debe realizar su propia reserva de computadora. No se permite compartir las reservas o ceder el uso de la computadora a otro estudiante."
+                               TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" Margin="0,0,0,10"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#DBE9FF" CornerRadius="20" Margin="0,0,0,15">
+                    <StackLayout>
+                        <Label Text="Regla N° 4" TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center"/>
+                        <Label Text="Llegar a tiempo para utilizar las computadoras reservadas. Si un estudiante no se presenta dentro de los primeros 10 minutos de la reserva, se considerará como una cancelación y la computadora quedará disponible para otros usuarios."
+                               TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" Margin="0,0,0,10"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#DBE9FF" CornerRadius="20" Margin="0,0,0,15">
+                    <StackLayout>
+                        <Label Text="Regla N° 5" TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center"/>
+                        <Label Text="Respetar el tiempo de reserva asignado y liberar la computadora al finalizar su uso. No se permite extender la reserva más allá del tiempo establecido, a menos que no haya otros usuarios esperando."
+                               TextColor="#1C61CD" FontFamily="Satoshi" HorizontalTextAlignment="Center" Margin="0,0,0,10"/>
+                    </StackLayout>
+                </Frame>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -12,7 +12,7 @@
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
                    HorizontalTextAlignment="Center"
-                   Margin="0,20,0,20"
+                   Margin="0,30,0,20"
                    FontAttributes="Bold"/>
 
             <Label Text="Tus reservas"
@@ -21,56 +21,26 @@
                    FontFamily="Satoshi"
                    HorizontalTextAlignment="Start"
                    Margin="0,30,0,0"/>
-            
+
             <ScrollView Orientation="Vertical" Margin="0,20,0,60">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
-
-                    <StackLayout Orientation="Vertical">
-                        <Frame BackgroundColor="LightGray" CornerRadius="20" Margin="0,0,0,10">
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="pc.png" WidthRequest="100"/>
-                                <StackLayout Orientation="Vertical" Margin="30,20,0,0">
-                                    <Label Text="PC-01 - 16/08" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD" FontFamily="Pacifico"/>
-                                    <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD" />
-                                </StackLayout>
-                            </StackLayout>
-                        </Frame>
-
-                        <Frame BackgroundColor="LightGray" CornerRadius="20" Margin="0,0,0,10">
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="pc.png" WidthRequest="100"/>
-                                <StackLayout Orientation="Vertical" Margin="30,20,0,0">
-                                    <Label Text="PC-02 - 16/08" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
-                                    <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
-                                </StackLayout>
-                            </StackLayout>
-                        </Frame>
-
-                        <Frame BackgroundColor="LightGray" CornerRadius="20" Margin="0,0,0,10">
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="pc.png" WidthRequest="100"/>
-                                <StackLayout Orientation="Vertical" Margin="30,20,0,0">
-                                    <Label Text="PC-03 - 16/08" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
-                                    <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
-                                </StackLayout>
-                            </StackLayout>
-                        </Frame>
-
-                        <Frame BackgroundColor="LightGray" CornerRadius="20" Margin="0,0,0,10">
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="pc.png" WidthRequest="100"/>
-                                <StackLayout Orientation="Vertical" Margin="30,20,0,0">
-                                    <Label Text="PC-04 - 16/08" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
-                                    <Label Text="2:00 PM - 6:00 PM" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD"/>
-                                </StackLayout>
-                            </StackLayout>
-                        </Frame>
-
-                    </StackLayout>
-                </Grid>
+                <ListView x:Name="listView" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame BackgroundColor="#DBE9FF" CornerRadius="20" Margin="0,0,0,10">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="pc.png" WidthRequest="100"/>
+                                        <StackLayout Orientation="Vertical" Margin="30,20,0,0">
+                                            <Label Text="{Binding Codigo}" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD" FontAttributes="Bold"/>
+                                            <Label Text="{Binding FechaHoraInicio}" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD" />
+                                            <Label Text="{Binding FechaHoraFin}" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD" />
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </ScrollView>
 
             <Button Text="Realizar reserva"
