@@ -24,5 +24,10 @@ namespace Reserva_Computadoras_Tecsup.Views
         {
             await Navigation.PushModalAsync(new Rules());
         }
+        private void LogOut_Clicked(object sender, EventArgs e)
+        {
+            // Realizar el cierre de sesión y volver a la página de inicio de sesión (Login)
+            Application.Current.MainPage = new Login();
+        }
     }
 }

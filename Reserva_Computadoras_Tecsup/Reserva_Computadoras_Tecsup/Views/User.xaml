@@ -45,8 +45,8 @@
                 </StackLayout>
             </Frame>
 
-            <Button x:Name="logOut"
-                    Text="Cerrar sesión"
+            <Button Text="Cerrar sesión"
+                    Clicked="LogOut_Clicked"
                     BackgroundColor="#448AFF"
                     TextColor="White"
                     CornerRadius="20"

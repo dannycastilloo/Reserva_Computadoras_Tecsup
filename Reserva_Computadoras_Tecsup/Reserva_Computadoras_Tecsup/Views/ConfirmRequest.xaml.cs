@@ -35,9 +35,9 @@ namespace Reserva_Computadoras_Tecsup.Views
                               $"Hora de fin: {reservation.FechaHoraFin.ToString("HH:mm tt")}";
         }
 
-        private async void VolverInicio(object sender, EventArgs e)
+        private void VolverInicio(object sender, EventArgs e)
         {
-            await Navigation.PopToRootAsync();
+            Application.Current.MainPage = new Home();
         }
     }
 }

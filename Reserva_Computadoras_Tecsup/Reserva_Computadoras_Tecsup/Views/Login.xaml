@@ -19,7 +19,7 @@
                     <Entry Text="{Binding Usuario.Correo}" TextColor="#9A9A9A" FontSize="14"/>
 
                     <Label Text="Contraseña" Margin="5,40,0,10" TextColor="#9A9A9A"/>
-                    <Entry Text="{Binding Usuario.Password}" TextColor="#9A9A9A" FontSize="14"/>
+                    <Entry Text="{Binding Usuario.Password}" TextColor="#9A9A9A" FontSize="14" IsPassword="True"/>
 
                     <Button Command="{Binding IniciarSesionCommand}"
                             Text="Iniciar sesión"
