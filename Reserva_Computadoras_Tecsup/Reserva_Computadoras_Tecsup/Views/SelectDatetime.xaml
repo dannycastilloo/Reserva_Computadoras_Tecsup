@@ -11,10 +11,10 @@
                    TextColor="#448AFF"
                    FontFamily="Satoshi"
                    HorizontalOptions="Center"
-                   Margin="0,20,0,40"
+                   Margin="0,20,0,20"
                    FontAttributes="Bold"/>
 
-            <Grid HorizontalOptions="Center">
+            <Grid HorizontalOptions="Center" Margin="0,0,0,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
@@ -42,7 +42,7 @@
 
             <Label Text="Elija la hora y la fecha para reservar su computadora" TextColor="#448AFF"/>
 
-            <Image Source="pc.png" Margin="0,20,0,20"/>
+            <Image Source="pc.png" Margin="0,10,0,20"/>
 
             <Label Text="Fecha de tu reserva"
                    TextColor="#448AFF"

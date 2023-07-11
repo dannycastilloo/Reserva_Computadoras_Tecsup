@@ -32,7 +32,6 @@
                                         <Image Source="pc.png" WidthRequest="100"/>
                                         <StackLayout Orientation="Vertical" Margin="30,20,0,0">
                                             <Label Text="EN ESPERA" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD" FontAttributes="Bold"/>
-                                            <Label Text="Se espera confirmacion por parte del administrador" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD" FontAttributes="Bold"/>
                                             <Label Text="{Binding FechaHoraInicio}" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD" />
                                             <Label Text="{Binding FechaHoraFin}" HorizontalOptions="Center" FontSize="15" TextColor="#1C61CD" />
                                         </StackLayout>
