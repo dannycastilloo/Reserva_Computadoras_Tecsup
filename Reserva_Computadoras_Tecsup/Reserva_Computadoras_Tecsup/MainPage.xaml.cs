@@ -13,6 +13,7 @@ namespace Reserva_Computadoras_Tecsup
         public MainPage()
         {
             InitializeComponent();
+            
         }
     }
 }

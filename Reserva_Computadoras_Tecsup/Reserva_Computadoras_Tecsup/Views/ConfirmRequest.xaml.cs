@@ -37,7 +37,7 @@ namespace Reserva_Computadoras_Tecsup.Views
 
         private void VolverInicio(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new Home();
+            MessagingCenter.Send(this, "VolverInicio");
         }
     }
 }

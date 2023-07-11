@@ -14,6 +14,32 @@
                    Margin="0,20,0,40"
                    FontAttributes="Bold"/>
 
+            <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <Ellipse Fill="#BCC2CC" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Label Text="1" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Ellipse Fill="#448AFF" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Label Text="2" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Grid>
+
+                <Grid Grid.Column="2">
+                    <Ellipse Fill="#BCC2CC" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Label Text="3" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                </Grid>
+            </Grid>
+
             <Label Text="Elija la hora y la fecha para reservar su computadora" TextColor="#448AFF"/>
 
             <Image Source="pc.png" Margin="0,20,0,20"/>

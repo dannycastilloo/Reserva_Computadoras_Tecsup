@@ -23,6 +23,10 @@ namespace Reserva_Computadoras_Tecsup
 
         protected override void OnStart()
         {
+            MessagingCenter.Subscribe<ConfirmRequest>(this, "VolverInicio", (sender) =>
+            {
+                MainPage = new MainPage();
+            });
         }
 
         protected override void OnSleep()
