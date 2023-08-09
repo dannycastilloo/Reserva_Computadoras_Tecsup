@@ -4,10 +4,10 @@ Desarrollo de un sistema de reserva de computadoras para optimizar la gestión d
 ## Prototipo
 Link: https://www.figma.com/file/o6Cccoq6zlNVERT8Cr5ESl/Prototipo-tesis?type=design&node-id=0%3A1&mode=design&t=wn4RK75JOQ6VHzLg-1
 
-##Vista de usuario
+## Vista de usuario
 ![image](https://github.com/dannycastilloo/SmartReserve/assets/76531494/f108e1c0-d7d3-4721-9aff-ae5b85255390)
 
-##Vista de administrador
+## Vista de administrador
 ![image](https://github.com/dannycastilloo/SmartReserve/assets/76531494/7303b4db-3652-4835-a974-620ba88f48a3)
 
 ## Modelo de proceso
