@@ -1,4 +1,4 @@
-# Descripción
+## Descripción
 Desarrollo de un sistema de reserva de computadoras para optimizar la gestión de recursos informáticos en el instituto TECSUP.
 
 ## Prototipo
