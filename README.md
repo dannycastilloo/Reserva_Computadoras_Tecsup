@@ -12,4 +12,5 @@ Link: https://www.figma.com/file/o6Cccoq6zlNVERT8Cr5ESl/Prototipo-tesis?type=des
 
 ## Modelo de proceso
 En primer lugar, el estudiante ingresa al aplicativo móvil utilizando las credenciales de su correo institucional. Luego selecciona la computadora que quiere reservar y el sistema valida su disponibilidad. Si el equipo no está disponible, se escogerá otra computadora. De lo contrario, procederá a escoger una fecha y hora disponible. El estudiante culmina con la solicitud de reserva y esta es enviada al administrador, quien puede aprobar o rechazar la solicitud para finalmente notificarlo al alumno.
-![image](https://github.com/dannycastilloo/SmartReserve/assets/76531494/221c2677-670f-4f87-a2a8-628e2b1c2bd3)
+
+![ReservarComputadoras](https://github.com/dannycastilloo/SmartReserve/assets/76531494/6f66809a-0acb-4ec7-9b6c-718fb3699c13)
