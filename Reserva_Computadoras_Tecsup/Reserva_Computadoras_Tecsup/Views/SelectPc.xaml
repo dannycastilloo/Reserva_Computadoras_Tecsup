@@ -30,7 +30,10 @@
                                     </Grid.ColumnDefinitions>
                                     <Image Grid.RowSpan="2" Aspect="AspectFill" HeightRequest="80" WidthRequest="80" Source="pc.png" Grid.Row="0" Grid.Column="0"/>
                                     <Label Text="{Binding Codigo}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Specs}" Grid.Row="2" Grid.Column="1" VerticalOptions="End" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Brand}" Grid.Row="2" Grid.Column="1" VerticalOptions="End" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Model}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Software}" Grid.Row="2" Grid.Column="1" VerticalOptions="End" HorizontalTextAlignment="Center"/>
+                                    
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>

@@ -16,7 +16,7 @@
                     <Label Text="Bienvenido!" HorizontalOptions="Center" TextColor="#448AFF" FontSize="24" Margin="0,10,0,10"/>
 
                     <Label Text="Correo" Margin="5,40,0,10" TextColor="#D3D8E0"/>
-                    <Entry Text="{Binding Usuario.Correo}" TextColor="#D3D8E0" FontSize="14"/>
+                    <Entry Text="{Binding Usuario.Email}" TextColor="#D3D8E0" FontSize="14"/>
 
                     <Label Text="Contraseña" Margin="5,40,0,10" TextColor="#D3D8E0"/>
                     <Entry Text="{Binding Usuario.Password}" TextColor="#D3D8E0" FontSize="14"/>
