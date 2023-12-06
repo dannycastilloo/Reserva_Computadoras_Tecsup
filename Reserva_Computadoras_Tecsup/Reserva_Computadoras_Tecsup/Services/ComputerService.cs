@@ -13,22 +13,26 @@ namespace Reserva_Computadoras_Tecsup.Services
                 new Models.Computer
                 {
                     Codigo = "Computadora 1",
-                    Specs = "Intel i9 12900k - 64GB RAM"
+                    Model = "Intel i9 12900k - 64GB RAM",
+                    Brand = "Dell"
                 },
                 new Models.Computer
                 {
                     Codigo = "Computadora 2",
-                    Specs = "Intel i9 12900k - 32GB RAM"
+                    Model = "Intel i9 12900k - 32GB RAM",
+                    Brand= "Dell"
                 },
                 new Models.Computer
                 {
                     Codigo = "Computadora 3",
-                    Specs = "Intel i9 12900k - 32GB RAM"
+                    Model = "Intel i9 12900k - 32GB RAM",
+                    Brand="Dell"
                 },
                 new Models.Computer
                 {
                     Codigo = "Computadora 4",
-                    Specs = "Intel i9 12900k - 64GB RAM"
+                    Model = "Intel i9 12900k - 64GB RAM",
+                    Brand= "Dell"
                 }
             };
         }
