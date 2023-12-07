@@ -20,7 +20,7 @@ namespace Reserva_Computadoras_Tecsup.Views
 			InitializeComponent ();
             horasLabel.Text = informacionHoras;
             SelectedComputer = selectedComputer;
-            CurrentUser = new Usuario { Nombres = "Danny Castillo" };
+            CurrentUser = new Usuario { Name = "Danny Castillo" };
             BindingContext = this;
         }
         private async void VolverInicio(object sender, EventArgs e)
