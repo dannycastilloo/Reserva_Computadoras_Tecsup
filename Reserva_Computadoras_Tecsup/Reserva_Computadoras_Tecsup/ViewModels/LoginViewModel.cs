@@ -45,7 +45,7 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
 
         private async Task IniciarSesionAsync()
         {
-            if (Usuario.Correo.EndsWith("@tecsup.edu.pe"))
+            if (Usuario.Email.EndsWith("@tecsup.edu.pe"))
             {
                 var config = new FirebaseAuthConfig
                 {
@@ -61,7 +61,7 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
 
                 try
                 {
-                    var userCredential = await client.SignInWithEmailAndPasswordAsync(Usuario.Correo, Usuario.Password);
+                    var userCredential = await client.SignInWithEmailAndPasswordAsync(Usuario.Email, Usuario.Password);
                     // Autenticación de usuario exitosa, realizar acciones necesarias
 
                     // Mostrar mensaje de inicio de sesión exitoso

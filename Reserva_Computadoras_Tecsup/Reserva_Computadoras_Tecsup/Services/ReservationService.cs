@@ -21,7 +21,7 @@ namespace Reserva_Computadoras_Tecsup.Services
         public async Task<List<Reservation>> GetReservations()
         {
             var reservations = await firebaseClient
-                .Child("reservas")
+                .Child("PastReserves")
                 .OnceAsync<Reservation>();
 
             return reservations.Select(r => r.Object).ToList();

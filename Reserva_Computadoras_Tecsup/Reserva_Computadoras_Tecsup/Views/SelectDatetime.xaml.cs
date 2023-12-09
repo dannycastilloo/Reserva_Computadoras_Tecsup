@@ -38,8 +38,8 @@ namespace Reserva_Computadoras_Tecsup.Views
             // Crea un objeto Reservation con los datos de reserva
             var reservation = new Reservation
             {
-                IdUsuario = 1, // Id del usuario actual, debes ajustarlo según tu lógica de autenticación
-                IdComputer = selectedComputer.Id,
+                UserId = 1, // Id del usuario actual, debes ajustarlo según tu lógica de autenticación
+                ComputerId = selectedComputer.Id,
                 FechaHoraInicio = new DateTime(datepicker.Date.Year, datepicker.Date.Month, datepicker.Date.Day,
                     horaInicioPicker.Time.Hours, horaInicioPicker.Time.Minutes, horaInicioPicker.Time.Seconds),
                 FechaHoraFin = new DateTime(datepicker.Date.Year, datepicker.Date.Month, datepicker.Date.Day,
@@ -49,7 +49,7 @@ namespace Reserva_Computadoras_Tecsup.Views
             try
             {
                 // Agrega la reserva a Firebase Realtime Database
-                await firebaseClient.Child("reservas").PostAsync(reservation);
+                await firebaseClient.Child("PastReserves").PostAsync(reservation);
 
                 await DisplayAlert("Éxito", "La reserva se ha creado correctamente.", "OK");
 

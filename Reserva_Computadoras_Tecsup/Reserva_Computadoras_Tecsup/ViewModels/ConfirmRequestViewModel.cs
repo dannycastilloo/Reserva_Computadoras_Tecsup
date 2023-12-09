@@ -20,7 +20,7 @@ namespace Reserva_Computadoras_Tecsup.ViewModels
         }
         public string CurrentUserName
         {
-            get { return reservation?.IdUsuario.ToString(); }
+            get { return reservation?.UserId.ToString(); }
         }
 
         public ConfirmRequestViewModel(Computer selectedComputer, Reservation reservation)

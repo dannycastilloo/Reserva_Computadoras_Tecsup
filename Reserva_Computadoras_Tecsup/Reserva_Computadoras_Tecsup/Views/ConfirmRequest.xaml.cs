@@ -22,7 +22,7 @@ namespace Reserva_Computadoras_Tecsup.Views
             InitializeComponent();
             this.selectedComputer = selectedComputer;
             this.reservation = reservation;
-            CurrentUser = new Usuario { Nombres = "Danny Castillo" };
+            CurrentUser = new Usuario { Name = "Danny Castillo" };
             BindingContext = new ConfirmRequestViewModel(selectedComputer, reservation);
         }
         protected override void OnAppearing()

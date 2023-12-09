@@ -13,10 +13,12 @@
                    FontAttributes="Bold"/>
 
             <Entry Placeholder="Código" x:Name="codigoEntry" />
-            <Entry Placeholder="Especificaciones" x:Name="specsEntry" />
-            <Entry Placeholder="Marca" x:Name="marcaEntry" />
+            <Entry Placeholder="Modelo" x:Name="modelEntry" />
+            <Entry Placeholder="Marca" x:Name="brandEntry" />
+            <Entry Placeholder="Software" x:Name="softwareEntry" />
 
-            <Switch x:Name="disponibilidadSwitch" IsToggled="true" />
+
+            <Switch x:Name="availableSwitch" IsToggled="true" />
 
             <Button Text="Registrar"
                     Clicked="RegistrarComputadora"

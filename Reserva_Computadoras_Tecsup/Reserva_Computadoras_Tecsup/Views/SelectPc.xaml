@@ -54,16 +54,18 @@
                                         <ColumnDefinition Width="Auto"/>
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                    <Image Grid.RowSpan="3" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" Source="pc.png" Grid.Row="0" Grid.Column="0"/>
+                                    <Image Grid.RowSpan="4" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" Source="pc.png" Grid.Row="0" Grid.Column="0"/>
                                     <Label Text="{Binding Codigo}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Marca}" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Specs}" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Brand}" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Model}" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Software}" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center"/>
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </ScrollView>
+
 
             <Button Text="Seleccionar computadora"
                     Clicked="SelectPC"

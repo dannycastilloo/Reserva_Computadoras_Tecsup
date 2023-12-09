@@ -19,8 +19,8 @@
                 <StackLayout Orientation="Horizontal">
                     <Image Source="person.png" WidthRequest="90"/>
                     <StackLayout Margin="25,20,0,0">
-                        <Label Text="Danny Castillo" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
-                        <Label Text="danny.castillo@tecsup.edu.pe" HorizontalTextAlignment="Center" TextColor="White" FontSize="12" />
+                        <Label Text="Diego Valdez" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
+                        <Label Text="diego.valdez.r@tecsup.edu.pe" HorizontalTextAlignment="Center" TextColor="White" FontSize="12" />
                     </StackLayout>
                 </StackLayout>
             </Frame>

@@ -23,23 +23,27 @@ namespace Reserva_Computadoras_Tecsup.Views
         private async void RegistrarComputadora(object sender, EventArgs e)
         {
             string codigo = codigoEntry.Text;
-            string specs = specsEntry.Text;
-            string marca = marcaEntry.Text;
-            bool disponibilidad = disponibilidadSwitch.IsToggled;
+            string model = modelEntry.Text;
+            string brand = brandEntry.Text;
+            string software = softwareEntry.Text;
+
+            bool available = availableSwitch.IsToggled;
 
             // Crear objeto Computer con los datos ingresados
             Computer nuevaComputadora = new Computer
             {
                 Codigo = codigo,
-                Specs = specs,
-                Marca = marca,
-                Disponibilidad = disponibilidad
+                Model = model,
+                Brand = brand,
+                Software = software,
+               
+                Available = available
             };
 
             try
             {
                 // Enviar el objeto a Firebase Realtime Database para crear el registro de la computadora
-                var result = await firebaseClient.Child("computadoras").PostAsync(nuevaComputadora);
+                var result = await firebaseClient.Child("Computers").PostAsync(nuevaComputadora);
 
                 await DisplayAlert("Éxito", "La computadora ha sido registrada correctamente", "OK");
                 await Navigation.PopAsync();

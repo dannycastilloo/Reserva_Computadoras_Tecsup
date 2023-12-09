@@ -63,7 +63,7 @@ namespace Reserva_Computadoras_Tecsup.Views
         private async Task<IList<Computer>> GetComputersFromFirebase()
         {
             // Obtiene la lista de computadoras desde Firebase
-            var snapshot = await firebaseClient.Child("computadoras").OnceAsync<Computer>();
+            var snapshot = await firebaseClient.Child("Computers").OnceAsync<Computer>();
 
             var computers = new List<Computer>();
 

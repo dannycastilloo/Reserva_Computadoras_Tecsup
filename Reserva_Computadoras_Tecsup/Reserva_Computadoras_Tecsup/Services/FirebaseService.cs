@@ -20,31 +20,36 @@ namespace Reserva_Computadoras_Tecsup.Services
 
         public async Task<IList<Computer>> GetComputers()
         {
-            return (await firebase.Child("computers").OnceAsync<Computer>()).Select(item => new Computer
+            return (await firebase.Child("Computers").OnceAsync<Computer>()).Select(item => new Computer
             {
                 Id = int.Parse(item.Key),
                 Codigo = item.Object.Codigo,
-                Specs = item.Object.Specs,
-                Marca = item.Object.Marca,
-                Disponibilidad = item.Object.Disponibilidad
+                Model = item.Object.Model,
+                Brand = item.Object.Brand,
+                Software = item.Object.Software,
+                Available = item.Object.Available
             }).ToList();
         }
 
         public async Task AddReservation(Reservation reservation)
         {
-            var result = await firebase.Child("reservations").PostAsync(reservation);
-            reservation.Id = int.Parse(result.Key);
+            var result = await firebase.Child("PastReserves").PostAsync(reservation);
+            reservation.ReserveId = int.Parse(result.Key);
         }
 
         public async Task<IList<Reservation>> GetReservationsByUserId(int userId)
         {
-            return (await firebase.Child("reservations").OrderBy("IdUsuario").EqualTo(userId).OnceAsync<Reservation>()).Select(item => new Reservation
+            return (await firebase.Child("PastReserves").OrderBy("UserId").EqualTo(userId).OnceAsync<Reservation>()).Select(item => new Reservation
             {
-                Id = int.Parse(item.Key),
-                IdUsuario = item.Object.IdUsuario,
-                IdComputer = item.Object.IdComputer,
+
+                ReserveId = int.Parse(item.Key),
+                UserId = item.Object.UserId,
+                ComputerId = item.Object.ComputerId,
+                State = item.Object.State,
                 FechaHoraInicio = item.Object.FechaHoraInicio,
-                FechaHoraFin = item.Object.FechaHoraFin
+                FechaHoraFin = item.Object.FechaHoraFin,
+                Active = item.Object.Active
+                
             }).ToList();
         }
     }
